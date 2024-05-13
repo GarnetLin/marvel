@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 
 import {MainPage, ComicsPage} from '../pages';
@@ -13,14 +12,12 @@ const App = () => {
             <div className="app">
                 <AppHeader/>
                 <main>
-                    <Switch>
-                        <Route exact path="/">
-                            <MainPage/>
+                    <Routes>
+                        <Route path="/" element={<MainPage/>}>
                         </Route>
-                        <Route exact path="/comics">
-                            <ComicsPage/> 
+                        <Route path="/comics" element={<ComicsPage/>}>
                         </Route>
-                    </Switch>
+                    </Routes>
                 </main>
             </div>
         </Router>
