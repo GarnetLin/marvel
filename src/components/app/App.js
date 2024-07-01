@@ -8,7 +8,7 @@ const Page404 = lazy(() => import('../pages/404'));
 const MainPage = lazy(() => import('../pages/MainPage'));
 const ComicsPage = lazy(() => import('../pages/ComicsPage'));
 const SingleComicLayout = lazy(() => import('../pages/singleComicLayout/SingleComicLayout'));
-const SingleCharacterLayout = lazy(() => import('../pages/singleCharacterLayout/SingleCharacterLayout'));
+const SingleCharacterLayout = lazy(() => import('../pages/singleCharacterLayout/SingleCharacterLayout'))
 const SinglePage = lazy(() => import('../pages/SinglePage'));
 
 const App = () => {
